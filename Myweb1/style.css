@@ -1,0 +1,192 @@
+/*aboutme*/
+
+
+* {
+background-color: rgb(46, 250, 5);
+margin: 0px;
+padding: 5px;}
+
+h1 {
+    background-color: blue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: coral;
+    box-shadow: azure;
+    }
+
+    nav {
+        margin: 0%;
+        background-color:gray;
+        padding: 10px;
+      }
+    
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 10;
+      }
+    
+      nav li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+    
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+
+      h3{
+        text-align: center;
+        
+        }
+
+
+/* Basic styling for the form */
+form {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"]
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox {
+    margin-bottom: 10px;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+        
+  th{
+    color: blue;
+    }     
+
+    header {
+        background-color: ;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      
+  main {
+    padding: 20px;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 200px;
+    background-image: url("20240426_140253.jpg"); 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-me img {
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  .about-me p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .Address {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .Address {
+    background-color: #7bf707;
+    padding: 0%;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+  }
+
+  .Address h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .Address p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #Proffession{
+    font-style: italic;
+    color: magenta;
+    font-size: large;
+             }
+
+    b{
+      color: blue;
+      font-style: italic;
+     }
+
+     

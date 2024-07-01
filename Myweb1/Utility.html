@@ -2,11 +2,110 @@
 <html>
 <head>
 <title>Utility</title>
+<style>
+ nav {
+        background-color: #50f106;
+        padding: 10px;
+      }
+  
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 1;
+      }
+  
+      nav li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+  
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+</style>
 
 </head>
 
 <body>
-    <h1>UTILITY</h1>
+ <header>
+
+<nav>
+    <ul>
+        <li><a href="file:///C:/Users/hp/Desktop/Myweb1/Home.html#">Home</a></li>
+        <LI><a href="file:///C:/Users/hp/Desktop/Myweb1/Engineering.html">Engineering</a></LI>
+        <li><a href="C:/Users/hp/Desktop/Myweb1/About_me.html" >About Me</a></li>
+        <li><a href="C:/Users/hp/Desktop/Myweb1/cv.html" >My CV</a></li>
+        <li><a href="C:/Users/hp/Desktop/Myweb1/Contact.html">Contact</a></li>
+        <li><a href="C:/Users/hp/Desktop/Myweb1/utility.html" >Utility</a></li>
+    </ul>
+</nav>
+</header>  
+<div class="main">
+  <div class="container">
+
+<h1>KNOW DAY OF THE WEEK</h1>
+<p>Enter the dates to know the day of the week</p>
+<input type="date" id="dateInput"> <br><br>
+<button onclick="KnowDay()">Know Day</button><br>
+<div id="result" style="display: none;"></div>
+
+ </div>
+</div>
+
+<p>The day of the week is:</p>
+
+<!--JavaScripts-->
+
+<script>
+  function KnowDay(){
+    var inputDate = document.getElementById('dateInput').value;
+    var date = new Date(inputDate);
+    var days = ['sunday', 'monday','Tuesday' ,'Wednesday','Thursday', 'Friday','Saturday']
+    var dayOfWeek = days[date.getDay()];
+    document.getElementById('result').style.display="";
+    document.getElementById('result').innerHTML = 'The day of the week for'+  inputDate+  'is'+  dayOfWeek;
+
+  }
+
+
+</script><br><br>
+
+<h1>CALCULATE AGE</h1>
+
+<label for="dob">Enter date of birth:</label>
+<input type="date" id="dob" required> <br><br>
+<button onclick="CalculateAge()">Calculate age</button>
+<p id="age"></p>
+
+<script>
+ function CalculateAge(){
+   var dob = new Date(document.getElementById('dob').value);
+   var now =new Date();
+
+   var ageYear = now.getFullYear() - dob.getFullYear();
+   var ageMonth = now.getMonth() - dob.getMonth();
+   var ageDay = now.getDate() - dob.getDate();
+   
+    if (ageMonth < 0 || (ageMonth == 0 && ageDay < 0)){
+
+         ageYear--;
+    }
+
+var ageString ="Your age is:" + ageYear+  "years";
+document.getElementById('age').textContent = ageString;
+
+
+}
+
+</script>
+
+
+    
+      
 </body>
 
 
